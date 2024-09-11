@@ -6,11 +6,11 @@ import streamlit as st
 import os
 
 # Load the dataset
-df_path = os.path.abspath("../data/processed/rahvad_filtered.csv")
+df_path = os.path.abspath("./data/processed/rahvad_filtered.csv")
 df = pd.read_csv(df_path)
 
 # Load the GeoJSON data
-geojson_path = os.path.abspath("../data/raw/gadm41_EST_1.json")
+geojson_path = os.path.abspath("./data/raw/gadm41_EST_1.json")
 with open(geojson_path) as f:
     geojson_data = json.load(f)
 
